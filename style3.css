@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('img/pic1.jpg') no-repeat center center/cover;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: black; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover::before {
+    width: 90%;
+}
+.apply a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(160, 61, 241);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.apply a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.h-txt h1 {
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+.h-txt p {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.h-txt1 p,.h-txt1 ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: indianred;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: darkred;
+}
+main {
+    padding: 20px;
+}
+main h2 {
+    margin: 20px 0;
+    font-size: 24px;
+    color: black;
+}
+main p, main ul {
+    margin: 10px 0;
+    font-size: 18px;
+}
+main ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: black;
+}
+footer a {
+    color: indianred;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.apply-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.apply-form form {
+    display: flex;
+    flex-direction: column;
+}
+.apply-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.apply-form input,
+.apply-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.apply-form button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: 0.4s linear;
+}
+.apply-form button:hover {
+    background-color: darkred;
+}

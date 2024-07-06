@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Internship at Cognifyz Technologies</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/cognifyz-1.png">
+            </div>
+            <div class="menu">
+                <a href="#home">Home</a>
+                <a href="#about">About us</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#qualifications">Qualifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="apply">
+                <a href="#apply">Apply now</a>
+            </div>
+        </nav>
+        <section class="h-txt" id="home">
+            <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+            <p>Join our team and gain real-world experience in web development. Our internship program offers valuable mentorship and hands-on projects.</p>
+    </header>
+    <main>
+        <section class="h-txt1" id="about">
+            <h2><u>About Us</u></h2>
+            <p>Innovate or Stagnate, Technology waits for no one
+                Cognifyz Technologies is a technology company that provides software solutions for businesses. The company offers a range of products and services, including artificial intelligence (AI), machine learning (ML), and data analytics tools.
+                
+                One of the main offerings of Cognifyz Technologies is their AI-powered chatbot platform, which can be integrated with various communication channels such as websites, social media, and messaging apps. The chatbot platform allows businesses to automate their customer support and engagement, reduce response time, and improve customer satisfaction.
+                
+                Cognifyz Technologies also provides ML-based solutions for predictive analytics, fraud detection, and recommendation engines. These tools help businesses to analyze large amounts of data and make data-driven decisions in real-time.</p>
+        </section>
+        <section class="h-txt1" id="highlights">
+            <h2><u>Highlights</u></h2>
+            <ul>
+                <li>Hands-on experience with real projects</li>
+                <li>Mentorship from experienced developers</li>
+                <li>Networking opportunities</li>
+                <li>Potential for full-time employment</li>
+            </ul>
+        </section>
+        <section class="h-txt1" id="qualifications">
+            <h2><u>Qualifications</u></h2>
+            <ul>
+                <li>Knowledge of HTML, CSS, and JavaScript</li>
+                <li>Experience with at least one JavaScript framework (e.g., React, Angular, Vue)</li>
+                <li>Basic understanding of backend technologies (e.g., Node.js, Express)</li>
+                <li>Good problem-solving skills</li>
+                <li>Ability to work in a team environment</li>
+            </ul>
+        </section>
+        <section class="apply-form" id="apply">
+            <h2>Apply Now</h2>
+            <form action="/submit_application" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="resume">Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:internships@cognifyz.com">internships@cognifyz.com</a> for more information.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
